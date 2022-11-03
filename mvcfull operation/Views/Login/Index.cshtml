@@ -1,0 +1,53 @@
+﻿@model Login
+@{
+    ViewData["Title"] = "Index";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="~/js/login.js" ></script>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">lOGIN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+<form method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">LOGIN PAGE</h2>
+			<hr />
+		</div>
+		@*<div asp-validation-summary="All"></div>*@
+		<div class="mb-3">
+			<label asp-for="Email"></label>
+			<input asp-for="Email" class="form-control" id="Email" />
+			<span asp-validation-for="Email" class="text-danger"></span>
+		</div>
+		<div class="mb-3">
+			<label asp-for="Password"></label>
+			<input asp-for="Password" class="form-control" id="Password" />
+			<span asp-validation-for="Password" class="text-danger"></span>
+		</div>
+		<button type="submit" class="btn btn-primary" style="width:150px" id="btnSave">Save</button>
+		<a asp-controller="Login" asp-action="Index" class="btn btn-secondary" style="width:150px">
+			Back to List
+		</a>
+	</div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+

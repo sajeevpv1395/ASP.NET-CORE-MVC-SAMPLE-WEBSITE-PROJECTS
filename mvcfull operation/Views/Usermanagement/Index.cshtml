@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Usermanagement>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">StudentName</th>
+      <th scope="col">Qualification</th>
+      <th scope="col">PhoneNumber</th>
+        <th scope="col">Email</th>
+          <th scope="col">Place</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>sajeev</td>
+      <td>mechatronics</td>
+      <td>9645704363</td>
+       <td>sajeev1995@gmail.com</td>
+        <td>palakkad</td>
+       
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+         <td>sajeev</td>
+      <td>mechatronics</td>
+      <td>9645704363</td>
+       <td>sajeev1995@gmail.com</td>
+        <td>palakkad</td>
+        
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+        <td>sajeev</td>
+      <td>mechatronics</td>
+      <td>9645704363</td>
+       <td>sajeev1995@gmail.com</td>
+        <td>palakkad</td>
+           <td>
+                   
+                        <a asp-controller="Usermanagement" asp-action="Edit" asp-route-id=""
+                        class="btn btn-primary mx-2"> <i class="bi bi-pencil-square"></i> Edit</a>
+                        <a asp-controller="Usermanagement" asp-action="Delete" asp-route-id=""
+                        class="btn btn-danger mx-2"> <i class="bi bi-trash-fill"></i> Delete</a>
+					
+				</td>
+
+    </tr>
+  </tbody>
+</table>
+

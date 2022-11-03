@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Mtronz Software Solutions</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/mvcfull_operation.styles.css" asp-append-version="true" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+       <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mtronz</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/bglogo3.png" rel="icon">
+  <link href="assets/img/bglogo3.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Company - v4.9.0
+  * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+      .navbar a i, .navbar a:focus i {
+    font-size: 27px;
+    line-height: 0;
+    margin-left: 5px;
+}
+  </style>
+</head>
+<body>
+    <header>
+        
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto">         <img src="assets/img/bglogo3.png" alt="Mtronz" style="width:50px;height:50px;"></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+              
+              
+              <li>  <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>          
+              <li>  <a class="navbar-brand" asp-area="" asp-controller="Category" asp-action="Index">Category</a></li>
+              <li>  <a class="navbar-brand" asp-area="" asp-controller="Product" asp-action="Index">Product</a></li>
+              <li>  <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">Login</a></li>
+      
+                         <li>  <a class="navbar-brand" asp-area="" asp-controller="Signup" asp-action="Index">Signup</a></li>
+              <li>  <a class="navbar-brand" asp-area="" asp-controller="Usermanagement" asp-action="Index">UserManagement</a></li>
+                <li>  <a class="navbar-brand" asp-area="" asp-controller="Demo" asp-action="Index">Demo</a></li>
+                      <li>  <a class="navbar-brand" asp-area="" asp-controller="UserSignup" asp-action="Index"><i class="bi bi-person-circle"></i></a></li>
+                       <li>  <a class="navbar-brand" asp-area="" asp-controller="UserLogin" asp-action="Index"><i class="bi bi-person-square"></i></a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex">
+        <a href="https://twitter.com/mtronz_s" class="twitter"><i class="bu bi-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100078835496598" class="facebook"><i class="bu bi-facebook"></i></a>
+        <a href="https://www.instagram.com/mtronzsoftware/" class="instagram"><i class="bu bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/mtronz-software-solutions-372856234/" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+ 
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

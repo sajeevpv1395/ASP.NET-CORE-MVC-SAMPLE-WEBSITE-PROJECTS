@@ -1,0 +1,48 @@
+﻿
+@model IEnumerable<Product>
+
+      <div class="col-6 text-end" style="display:flex; flex-direction:row">
+            <a asp-controller="Product" asp-action="Create" class="btn btn-primary">
+               <i class="bi bi-plus-circle"></i> &nbsp; Create New Category
+			</a>
+		</div>
+           <div class="col-6 text-end" style="display:flex; padding-top:10px; margin-left:800px;">
+            <a asp-controller="Product" asp-action="" class="btn btn-primary">
+               <i class="bi bi-search"></i> &nbsp; search category
+			</a>
+		</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">product name</th>
+      <th scope="col">quantity</th>
+      <th scope="col">price</th>
+      <th scope="col">edit data</th>
+    </tr>
+  </thead>
+  <tbody>
+     @foreach (var obj in Model)
+     {
+            <tr>
+      <th scope="row">@obj.Id</th>
+      <td>@obj.ProductName</td>
+      <td>@obj.ProductQuanitity</td>
+      <td>@obj.ProductPrice</td>
+       <td> <a asp-controller="Product" asp-action="Edit" asp-route-id="@obj.Id"
+                        class="btn btn-primary mx-2"> <i class="bi bi-pencil-square"></i> Edit</a>
+                        <a asp-controller="Product" asp-action="Delete" asp-route-id="@obj.Id"
+                        class="btn btn-danger mx-2"> <i class="bi bi-trash-fill"></i> Delete</a>
+                    </td>
+      
+                        
+    </tr> 
+     }
+ 
+      
+   
+  
+  </tbody>
+</table>
+
+
